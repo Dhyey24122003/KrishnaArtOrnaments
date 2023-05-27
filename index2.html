@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+.arrow {
+    border: 0;
+    /* background: linear-gradient(
+      263.74deg,
+      #ff008a 2.77%,
+      rgba(255, 255, 255, 0) 110.53%
+    ), */
+    /* linear-gradient(95.26deg, #daa520 -13.28%, #ffffff 139.8%); */
+    /* border-width: 0 15px 15px 0; */
+    /* display: inline-block; */
+    background: transparent;
+    opacity: 0.5;
+    /* padding: 5px; */
+    transition-duration: 200ms;
+    
+  }
+  .arrow:hover{
+    opacity: 1;
+  }
+  .Arr{
+    /* size: 50px */
+    height: 50px;
+  }
+  .bright {
+    /* color: #ff008a; */
+    /* transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); */
+  }
+  
+  .bleft {
+    /* transform: rotate(135deg);
+    -webkit-transform: rotate(135deg); */
+  }
+
+#image-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-image: url(2769910.jpg);
+  background-size: cover;
+  z-index: -10;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+#Mh {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+  background: linear-gradient(
+      263.74deg,
+      #ff008a 2.77%,
+      rgba(255, 255, 255, 0) 110.53%
+    ),
+    linear-gradient(95.26deg, #daa520 -13.28%, #ffffff 139.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.7;
+  transition-duration: 200ms;
+  /* color: goldenrod; */
+}
+#Mh:hover {
+  font-size: 120px;
+  opacity: 1;
+}
+#Portf {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+  background: linear-gradient(
+      263.74deg,
+      #ff008a 2.77%,
+      rgba(255, 255, 255, 0) 110.53%
+    ),
+    linear-gradient(95.26deg, #daa520 -13.28%, #ffffff 139.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.7;
+  transition-duration: 200ms;
+  /* color: goldenrod; */
+}
+#Portf:hover {
+  font-size: 120px;
+  opacity: 1;
+}
+.mySlides{
+    display: none;
+}
+#Contact {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+  background: linear-gradient(
+      263.74deg,
+      #ff008a 2.77%,
+      rgba(255, 255, 255, 0) 110.53%
+    ),
+    linear-gradient(95.26deg, #daa520 -13.28%, #ffffff 139.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.7;
+  transition-duration: 200ms;
+  /* color: goldenrod; */
+}
+#Contact:hover {
+  font-size: 120px;
+  opacity: 1;
+}
+
+#cus {
+  position: absolute;
+  /* width: 100%; */
+  /* margin-left: calc(90% - 150px); */
+  /* margin-right: calc(90% - 150px); */
+  height: 27.78%;
+  /* margin-left: calc(100% - 89.58%/2);
+  margin-right: calc(100% - 89.58%/2); */
+  width: 89.58%;
+  /* height: 350px; */
+  /* color: blue; */
+  /* background: linear-gradient(138.46deg, goldenrod -6.4%, #ffffff 114.98%); */
+  opacity: 0.5;
+  /* border-radius: 10%; */
+  transition-duration: 200ms;
+  background: linear-gradient(
+      263.74deg,
+      rgba(255, 255, 255, 0) 2.77%,
+      #ff008a 110.53%
+    ),
+    linear-gradient(95.26deg, #ffffff -13.28%, #daa520 139.8%);
+  border-radius: 40px;
+  /* margin: auto; */
+  left: calc(50% - 89.58%/2);
+}
+#cus:hover {
+  opacity: 0.9;
+  height: 30%;
+  width: 92%;
+}
+.Contacttxt{
+    font-weight: bold;
+    font-size: 20px;
+    /* padding: 0; */
+    /* padding: 2%; */
+    text-align: center;
+    transition-duration: 200ms;
+
+}
+.Contacttxt:hover{
+    font-size: 24px;
+}
+/* Rectangle 11 */
+
+/* position: absolute;
+width: 1720px;
+height: 350px;
+left: 100px;
+top: 630px;
+
+background: linear-gradient(
+    263.74deg,
+    rgba(255, 255, 255, 0) 2.77%,
+    #ff008a 110.53%
+  ),
+  linear-gradient(95.26deg, #ffffff -13.28%, #daa520 139.8%);
+border-radius: 40px; */
+a:link{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+a:active{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+
+}
+#menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.show-menu {
+  display: flex;
+}
+
+</style>
+
+<body>
+    <header>
+        <div id="image-screen"></div>
+        <div class="container">
+          <button class="menu-btn">Home</button>
+          <button class="menu-btn">Portfolio</button>
+          <button class="menu-btn">Contact Us</button>
+          <p id="Mh" onclick="toggleMenu()">Krishna<br>Art Ornaments</p>
+          <div id="menu">
+            <button class="menu-btn" onclick="toggleMenu()">Back</button>
+            <button class="menu-btn">Home</button>
+            <button class="menu-btn">Portfolio</button>
+            <button class="menu-btn">Contact Us</button>
+            <button class="menu-btn">About</button>
+          </div>
+        </div>
+      </header>
+      
+        <main>
+        </div>
+        <div>
+        <p id="Portf">Portfolio</p>
+        <section class="SlideShow">
+            <button class="arrow bleft" onclick="plusDivs(-1)"><img src="Group 2.png" style="height: 40px;" class="Arr"></button>
+                <img class="mySlides" src="1.jpeg" style="width:60%">
+                <img class="mySlides" src="2.jpeg" style="width:60%">
+                <img class="mySlides" src="3.jpeg" style="width:60%">
+                <img class="mySlides" src="4.jpeg" style="width:60%">
+                <img class="mySlides" src="5.jpeg" style="width:60%">
+              
+            
+  <button class="arrow bright" onclick="plusDivs(1)"><img src="Group 1.png" style="height: 40px;" class="Arr"></button>
+
+
+        </section></div>
+    </main>
+    <footer>
+        <div>
+        <p id="Contact">Contact Us</p></div>
+        <section id="cus">
+            <p class="Contacttxt">+91 98254 23678<br>+91 93770 03447<br>
+           
+               <a href="mailto:krishna.art2412@gmail.com"> krishna.art2412@gmail.com</a><br>
+            303 , G.B. Diamond Square , S.B.I. Bank Building , Pedak Road , Rajkot - 360003 , Gujarat , India</p>.
+        
+        </p>
+        </section>
+        <!-- <p id="Portf">Portfolio</p> -->
+    </div>
+    </footer>
+</body>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script>
+    function toggleMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("show-menu");
+}
+
+</script>
+</html>

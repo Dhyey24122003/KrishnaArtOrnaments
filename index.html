@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="image-screen">
+        </div>
+        <div class="container">
+            <div class="cont">
+                <a rel="noopener" href="#Mh"><button id="menu-btn1">Home</button></a>
+                <a rel="noopener" href="#Portf"><button id="menu-btn2">Portfolio</button></a>
+                <a rel="noopener" href="#cus"><button id="menu-btn3">Contact Us</button></a>
+            </div>
+            <p id="Mh">Krishna<br>Art Ornaments</p>
+            <div>
+                <section>
+
+                </section>
+    </header>
+    <main>
+        </div>
+        <div>
+            <p id="Portf">Portfolio</p>
+            <section class="SlideShow">
+                <button class="arrow" onclick="plusDivs(-1)"><img src="Group 2.png" style="height: 40px;"
+                        class="Arr"></button>
+                <img class="mySlides" src="1.jpeg" style="width:60%">
+                <img class="mySlides" src="2.jpeg" style="width:60%">
+                <img class="mySlides" src="3.jpeg" style="width:60%">
+                <img class="mySlides" src="4.jpeg" style="width:60%">
+                <img class="mySlides" src="5.jpeg" style="width:60%">
+
+
+                <button class="arrow" onclick="plusDivs(1)"><img src="Group 1.png" style="height: 40px;"
+                        class="Arr"></button>
+
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p id="Contact">Contact Us</p>
+        </div>
+        <section id="cus">
+            <p class="Contacttxt"><a href="tel:+919825423678">+91 98254 23678</a>
+                <br><a href="tel:+919377003447">+91 93770 03447</a><br>
+
+                <a href="mailto:krishna.art2412@gmail.com"> krishna.art2412@gmail.com</a><br>
+                <a href="https://goo.gl/maps/tV3tCFFJ94Qpwxuf8">
+                    303 , G.B. Diamond Square , S.B.I. Bank Building , Pedak Road , Rajkot - 360003 , Gujarat ,
+                    India</a>
+            </p>.
+
+            </p>
+        </section>
+        <!-- <p id="Portf">Portfolio</p> -->
+        </div>
+    </footer>
+</body>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+</html>
