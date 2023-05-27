@@ -1,183 +1,222 @@
-/* Common styles for both desktop and mobile */
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-  }
-  
-  .arrow {
-    border: 0;
-    background: transparent;
-    opacity: 0.5;
-    margin: 2%;
-    transition-duration: 200ms;
-  }
-  
-  .arrow:hover {
-    opacity: 1;
-  }
-  
-  .Arr {
-    height: 50px;
-  }
-  
-  #menu-btn1,
-  #menu-btn2,
-  #menu-btn3 {
-    padding: 5px;
-    opacity: 0.7;
-    transition-duration: 200ms;
-    background: linear-gradient(263.74deg, #DAA520 2.77%, #FF008A 110.53%),
-      linear-gradient(95.26deg, #FFFFFF -13.28%, #DAA520 139.8%);
-    border-radius: 13px;
-    border: 0;
-  }
-  
-  #menu-btn1:hover,
-  #menu-btn2:hover,
-  #menu-btn3:hover {
-    opacity: 1;
-    font-size: larger;
-  }
-  
-  #image-screen {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background-image: url(2769910.jpg);
-    background-size: cover;
-    z-index: -10;
-  }
-  
-  section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  /* Desktop styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  border: 0;
+  background: transparent;
+  opacity: 0.5;
+  margin: 2%;
+  transition-duration: 200ms;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.Arr {
+  height: 50px;
+}
+
+#menu-btn1,
+#menu-btn2,
+#menu-btn3 {
+  padding: 5px;
+  opacity: 0.7;
+  transition-duration: 200ms;
+  background: linear-gradient(263.74deg, #DAA520 2.77%, #FF008A 110.53%),
+    linear-gradient(95.26deg, #FFFFFF -13.28%, #DAA520 139.8%);
+  border-radius: 13px;
+  border: 0;
+}
+
+#menu-btn1:hover,
+#menu-btn2:hover,
+#menu-btn3:hover {
+  opacity: 1;
+  font-size: larger;
+}
+
+#image-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-image: url(2769910.jpg);
+  background-size: cover;
+  z-index: -10;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+#Mh,
+#Portf,
+#Contact {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+  background: linear-gradient(263.74deg, #ff008a 2.77%, rgba(255, 255, 255, 0) 110.53%),
+    linear-gradient(95.26deg, #daa520 -13.28%, #ffffff 139.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.7;
+  transition-duration: 200ms;
+}
+
+#Mh:hover,
+#Portf:hover,
+#Contact:hover {
+  font-size: 120px;
+  opacity: 1;
+}
+
+#cus {
+  position: absolute;
+  height: 27.78%;
+  width: 89.58%;
+  opacity: 0.5;
+  transition-duration: 200ms;
+  background: linear-gradient(263.74deg, rgba(255, 255, 255, 0) 2.77%, #ff008a 110.53%),
+    linear-gradient(95.26deg, #ffffff -13.28%, #daa520 139.8%);
+  border-radius: 40px;
+  left: calc(50% - 89.58% / 2);
+}
+
+#cus:hover {
+  opacity: 0.9;
+  height: 30%;
+  width: 92%;
+}
+
+.Contacttxt {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  transition-duration: 200ms;
+}
+
+.Contacttxt:hover {
+  font-size: 24px;
+}
+
+/* Flexbox styles */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries for Different Devices */
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 575.98px) {
   #Mh,
   #Portf,
   #Contact {
-    padding-top: 10%;
-    text-align: center;
-    font-size: 100px;
-    font-weight: 600;
-    background: linear-gradient(
-        263.74deg,
-        #ff008a 2.77%,
-        rgba(255, 255, 255, 0) 110.53%
-      ),
-      linear-gradient(95.26deg, #daa520 -13.28%, #ffffff 139.8%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    opacity: 0.7;
-    transition-duration: 200ms;
+    font-size: 40px;
   }
-  
-  #Mh:hover,
-  #Portf:hover,
-  #Contact:hover {
-    font-size: 120px;
-    opacity: 1;
-  }
-  
+
   #cus {
-    position: absolute;
+    height: 15%;
+    width: 70%;
+  }
+
+  .Contacttxt {
+    font-size: 14px;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #Mh,
+  #Portf,
+  #Contact {
+    font-size: 60px;
+  }
+
+  #cus {
+    height: 20%;
+    width: 80%;
+  }
+
+  .Contacttxt {
+    font-size: 16px;
+  }
+}
+
+/* Medium Devices (Laptops, Desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #Mh,
+  #Portf,
+  #Contact {
+    font-size: 80px;
+  }
+
+  #cus {
+    height: 25%;
+    width: 85%;
+  }
+
+  .Contacttxt {
+    font-size: 18px;
+  }
+}
+
+/* Large Devices (Large Screens, TVs) */
+@media (min-width: 992px) {
+  #Mh,
+  #Portf,
+  #Contact {
+    font-size: 100px;
+  }
+
+  #cus {
     height: 27.78%;
     width: 89.58%;
-    opacity: 0.5;
-    transition-duration: 200ms;
-    background: linear-gradient(
-        263.74deg,
-        rgba(255, 255, 255, 0) 2.77%,
-        #ff008a 110.53%
-      ),
-      linear-gradient(95.26deg, #ffffff -13.28%, #daa520 139.8%);
-    border-radius: 40px;
-    left: calc(50% - 89.58% / 2);
   }
-  
-  #cus:hover {
-    opacity: 0.9;
+
+  .Contacttxt {
+    font-size: 20px;
+  }
+}
+
+/* Extra Large Devices (Ultra-wide Screens) */
+@media (min-width: 1200px) {
+  #Mh,
+  #Portf,
+  #Contact {
+    font-size: 120px;
+  }
+
+  #cus {
     height: 30%;
     width: 92%;
   }
-  
+
   .Contacttxt {
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    transition-duration: 200ms;
+    font-size: 22px;
   }
-  
-  .Contacttxt:hover {
-    font-size: 24px;
-  }
-  
-  /* Tablet and Mobile styles */
-  @media (max-width: 992px) {
-    #Mh,
-    #Portf,
-    #Contact {
-      font-size: 80px;
-    }
-  
-    #cus {
-      height: 25%;
-      width: 85%;
-    }
-  
-    .Contacttxt {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #Mh,
-    #Portf,
-    #Contact {
-      font-size: 60px;
-    }
-  
-    #cus {
-      height: 20%;
-      width: 80%;
-    }
-  
-    .Contacttxt {
-      font-size: 16px;
-    }
-  }
-  a:link {
-    text-decoration: none;
-    color: black;
-    background-color: transparent;
-  }
-  a:active {
-    text-decoration: none;
-    color: black;
-    background-color: transparent;
-  }
-  .cont {
-    display: flex;
-    /* text-align: right; */
-    /* align-items: ; */
-    justify-content: right;
-    /* margin-right: 1%; */
-  }
-  .cont a {
-    margin-top: 1%;
-    margin-right: 2%;
-  }
+}
