@@ -82,7 +82,6 @@ section {
   text-fill-color: transparent;
   opacity: 0.7;
   transition-duration: 200ms;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #Mh:hover,
@@ -115,7 +114,6 @@ section {
   font-size: 20px;
   text-align: center;
   transition-duration: 200ms;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .Contacttxt:hover {
