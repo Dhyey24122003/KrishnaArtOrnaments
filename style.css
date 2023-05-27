@@ -1,13 +1,10 @@
+/* Common styles for both desktop and mobile */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .arrow {
@@ -67,6 +64,7 @@ section {
   display: none;
 }
 
+/* Desktop styles */
 #Mh,
 #Portf,
 #Contact {
@@ -74,7 +72,11 @@ section {
   text-align: center;
   font-size: 100px;
   font-weight: 600;
-  background: linear-gradient(263.74deg, #ff008a 2.77%, rgba(255, 255, 255, 0) 110.53%),
+  background: linear-gradient(
+      263.74deg,
+      #ff008a 2.77%,
+      rgba(255, 255, 255, 0) 110.53%
+    ),
     linear-gradient(95.26deg, #daa520 -13.28%, #ffffff 139.8%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,7 +99,11 @@ section {
   width: 89.58%;
   opacity: 0.5;
   transition-duration: 200ms;
-  background: linear-gradient(263.74deg, rgba(255, 255, 255, 0) 2.77%, #ff008a 110.53%),
+  background: linear-gradient(
+      263.74deg,
+      rgba(255, 255, 255, 0) 2.77%,
+      #ff008a 110.53%
+    ),
     linear-gradient(95.26deg, #ffffff -13.28%, #daa520 139.8%);
   border-radius: 40px;
   left: calc(50% - 89.58% / 2);
@@ -120,37 +126,18 @@ section {
   font-size: 24px;
 }
 
-/* Flexbox styles */
-
-.container {
+.cont {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: right;
 }
 
-/* Media Queries for Different Devices */
-
-/* Extra Small Devices (Phones) */
-@media (max-width: 575.98px) {
-  #Mh,
-  #Portf,
-  #Contact {
-    font-size: 40px;
-  }
-
-  #cus {
-    height: 15%;
-    width: 70%;
-  }
-
-  .Contacttxt {
-    font-size: 14px;
-  }
+.cont a {
+  margin-top: 1%;
+  margin-right: 2%;
 }
 
-/* Small Devices (Tablets) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* Mobile styles */
+@media (max-width: 768px) {
   #Mh,
   #Portf,
   #Contact {
@@ -164,59 +151,5 @@ section {
 
   .Contacttxt {
     font-size: 16px;
-  }
-}
-
-/* Medium Devices (Laptops, Desktops) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #Mh,
-  #Portf,
-  #Contact {
-    font-size: 80px;
-  }
-
-  #cus {
-    height: 25%;
-    width: 85%;
-  }
-
-  .Contacttxt {
-    font-size: 18px;
-  }
-}
-
-/* Large Devices (Large Screens, TVs) */
-@media (min-width: 992px) {
-  #Mh,
-  #Portf,
-  #Contact {
-    font-size: 100px;
-  }
-
-  #cus {
-    height: 27.78%;
-    width: 89.58%;
-  }
-
-  .Contacttxt {
-    font-size: 20px;
-  }
-}
-
-/* Extra Large Devices (Ultra-wide Screens) */
-@media (min-width: 1200px) {
-  #Mh,
-  #Portf,
-  #Contact {
-    font-size: 120px;
-  }
-
-  #cus {
-    height: 30%;
-    width: 92%;
-  }
-
-  .Contacttxt {
-    font-size: 22px;
   }
 }
